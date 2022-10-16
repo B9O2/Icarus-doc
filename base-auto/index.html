@@ -13,7 +13,7 @@
     
     
       
-        <title>快速上手 - ICARUS Document</title>
+        <title>base - ICARUS Document</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#目录结构" class="md-skip">
+        <a href="#base-module" class="md-skip">
           跳转至
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              快速上手
+              base
             
           </span>
         </div>
@@ -209,12 +209,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -375,11 +377,101 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../base-auto/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          base
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         base
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#function--echo" class="md-nav__link">
+    function  echo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--read_file" class="md-nav__link">
+    function  read_file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--center" class="md-nav__link">
+    function  center
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--input" class="md-nav__link">
+    function  input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--walk_dir" class="md-nav__link">
+    function  walk_dir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--save_file" class="md-nav__link">
+    function  save_file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--col" class="md-nav__link">
+    function  col
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--now" class="md-nav__link">
+    function  now
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -450,6 +542,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -458,8 +552,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#目录结构" class="md-nav__link">
-    目录结构
+  <a href="#function--echo" class="md-nav__link">
+    function  echo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--read_file" class="md-nav__link">
+    function  read_file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--center" class="md-nav__link">
+    function  center
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--input" class="md-nav__link">
+    function  input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--walk_dir" class="md-nav__link">
+    function  walk_dir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--save_file" class="md-nav__link">
+    function  save_file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--col" class="md-nav__link">
+    function  col
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function--now" class="md-nav__link">
+    function  now
   </a>
   
 </li>
@@ -479,18 +622,78 @@
                   
 
 
-  <h1>快速上手</h1>
-
-<h2 id="目录结构">目录结构<a class="headerlink" href="#目录结构" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ICARUS</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="err">├─</span> <span class="n">ICARUS</span><span class="o">.</span><span class="n">exe</span> <span class="c1"># 主程序</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="err">└─</span> <span class="n">MatchExecCollection</span> <span class="c1"># 通过规则匹配自动执行的合集</span>
+<h1 id="base-module"><strong>base</strong> Module<a class="headerlink" href="#base-module" title="Permanent link">&para;</a></h1>
+<p><em>*以下内容由程序自动呈现</em>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">base</span> <span class="c1"># 引入模块</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">base</span> <span class="kn">import</span> <span class="o">*</span> <span class="c1"># 引入模块中的所有函数与类</span>
+</code></pre></div></p>
+<h2 id="function--echo"><em>function</em>  <strong>echo</strong><a class="headerlink" href="#function--echo" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">echo</span><span class="p">(</span><span class="n">something</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
-<p>首次运行后将创建<code>~/.icarus</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="o">~/.</span><span class="n">icarus</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="err">├─</span> <span class="n">CompatibilityPack</span> <span class="c1"># 兼容包</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="err">└─</span> <span class="n">config</span><span class="o">.</span><span class="n">yml</span> <span class="c1"># 通用配置文件</span>
+建议使用的输出<br />
+Eg.<br />
+echo("标准色",GREEN)<br />
+echo("十六进制","f35336")<br />
+echo("256色",72)<br />
+echo("RGB",(30, 144, 255))  </p>
+<p>echo("通过256色设置 前景色，后景色",(23,145))<br />
+echo("通过十六进制设置 前景色，后景色",("2add9c","eaff56"))<br />
+echo("通过RGB设置 前景色，后景色",((20, 144, 234),(234, 78, 23)))  </p>
+<p>echo("混搭",((30, 144, 255),"c93756"))  </p>
+<ul>
+<li><em>something</em>:  可以为任意类型，如果是字典，列表将输出他们在go中的结构</li>
+<li><em>color</em>:  输出的颜色，可省略，默认为utils.WHITE。</li>
+<li><em>end</em>:  输出的结尾，可省略，默认为换行符</li>
+</ul>
+<h2 id="function--read_file"><em>function</em>  <strong>read_file</strong><a class="headerlink" href="#function--read_file" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
+读取文件  </p>
+<ul>
+<li><em>file_path</em>: </li>
+</ul>
+<h2 id="function--center"><em>function</em>  <strong>center</strong><a class="headerlink" href="#function--center" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span> <span class="nf">center</span><span class="p">(</span><span class="n">something</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+居中输出，拥有和echo同样的多种颜色格式支持  </p>
+<ul>
+<li><em>something</em>:  字符串</li>
+<li><em>color</em>:  输出的颜色，可省略，默认为utils.WHITE</li>
+</ul>
+<h2 id="function--input"><em>function</em>  <strong>input</strong><a class="headerlink" href="#function--input" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">input</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">items</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+带有补全提示的输入  </p>
+<ul>
+<li><em>prefix</em>:  前缀，可省略，默认为"&gt;"</li>
+<li><em>color</em>:  颜色，前缀的颜色，可省略，默认为utils.WHITE</li>
+<li><em>items</em>:  字典，键为提示词，值为描述。e.g.{"hello":"你好"}，可省略，默认空</li>
+</ul>
+<h2 id="function--walk_dir"><em>function</em>  <strong>walk_dir</strong><a class="headerlink" href="#function--walk_dir" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">walk_dir</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">recursion</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span>  <span class="n">所有文件与文件夹</span>
+</code></pre></div>
+遍历文件夹  </p>
+<ul>
+<li><em>path</em>:  路径</li>
+<li><em>recursion</em>:  递归，可省略，默认false</li>
+</ul>
+<h2 id="function--save_file"><em>function</em>  <strong>save_file</strong><a class="headerlink" href="#function--save_file" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">save_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">cover</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+保存文件  </p>
+<ul>
+<li><em>file_path</em>:  保存文件路径</li>
+<li><em>content</em>:  内容</li>
+<li><em>cover</em>:  是否覆盖，可省略，默认false</li>
+</ul>
+<h2 id="function--col"><em>function</em>  <strong>col</strong><a class="headerlink" href="#function--col" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">col</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+返回collection内路径</p>
+<h2 id="function--now"><em>function</em>  <strong>now</strong><a class="headerlink" href="#function--now" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span> <span class="nf">now</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+返回当前时间字符串  </p>
 
 
 
@@ -506,6 +709,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../vault-auto/" class="md-footer__link md-footer__link--prev" aria-label="上一页: vault" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              vault
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../files-auto/" class="md-footer__link md-footer__link--next" aria-label="下一页: files" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              files
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
