@@ -222,14 +222,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Modules
+          所有模块
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Modules" data-md-level="1">
+      <nav class="md-nav" aria-label="所有模块" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Modules
+          所有模块
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -239,8 +239,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../ICARUS-auto/" class="md-nav__link">
-        ICARUS
+      <a href="../cli-auto/" class="md-nav__link">
+        cli
       </a>
     </li>
   
@@ -253,36 +253,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../cmds-auto/" class="md-nav__link">
-        cmds
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../docker-auto/" class="md-nav__link">
-        docker
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fofa-auto/" class="md-nav__link">
-        fofa
+      <a href="../files-auto/" class="md-nav__link">
+        files
       </a>
     </li>
   
@@ -356,6 +328,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#function--format_split" class="md-nav__link">
+    function  format_split
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -371,50 +350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows-auto/" class="md-nav__link">
-        windows
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cli-auto/" class="md-nav__link">
-        cli
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coding-auto/" class="md-nav__link">
-        coding
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../crypto-auto/" class="md-nav__link">
-        crypto
+      <a href="../utils-auto/" class="md-nav__link">
+        utils
       </a>
     </li>
   
@@ -455,8 +392,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../files-auto/" class="md-nav__link">
-        files
+      <a href="../cmds-auto/" class="md-nav__link">
+        cmds
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crypto-auto/" class="md-nav__link">
+        crypto
       </a>
     </li>
   
@@ -483,8 +434,64 @@
   
   
     <li class="md-nav__item">
-      <a href="../utils-auto/" class="md-nav__link">
-        utils
+      <a href="../windows-auto/" class="md-nav__link">
+        windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ICARUS-auto/" class="md-nav__link">
+        ICARUS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coding-auto/" class="md-nav__link">
+        coding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker-auto/" class="md-nav__link">
+        docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fofa-auto/" class="md-nav__link">
+        fofa
       </a>
     </li>
   
@@ -551,6 +558,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#function--format_split" class="md-nav__link">
+    function  format_split
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -567,7 +581,7 @@
 
 
 <h1 id="strings-module"><strong>strings</strong> Module<a class="headerlink" href="#strings-module" title="Permanent link">&para;</a></h1>
-<p><em>*以下内容由程序自动呈现</em>
+<p><em>*以下内容由程序自动呈现, 可能存在错误</em>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">strings</span> <span class="c1"># 引入模块</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span> <span class="nn">strings</span> <span class="kn">import</span> <span class="o">*</span> <span class="c1"># 引入模块中的所有函数与类</span>
 </code></pre></div></p>
@@ -576,10 +590,10 @@
 </code></pre></div>
 字符串替换  </p>
 <ul>
-<li><em>text</em>:  文本</li>
-<li><em>old</em>:  原始字符串</li>
 <li><em>new</em>:  替换字符串</li>
 <li><em>num</em>:  替换次数，可省略，默认-1为全部替换</li>
+<li><em>text</em>:  文本</li>
+<li><em>old</em>:  原始字符串</li>
 </ul>
 <h2 id="function--match"><em>function</em>  <strong>match</strong><a class="headerlink" href="#function--match" title="Permanent link">&para;</a></h2>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">match</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">left</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">right</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span>  <span class="n">返回包含结果的字符串列表</span>
@@ -589,9 +603,9 @@ e.g.
          match("abc aqc","a", "c") <br />
      result: ["b","q"]   </p>
 <ul>
-<li><em>text</em>:  需要匹配的文本</li>
 <li><em>left</em>:  左侧文本</li>
 <li><em>right</em>:  右侧文本</li>
+<li><em>text</em>:  需要匹配的文本</li>
 </ul>
 <h2 id="function--extend"><em>function</em>  <strong>extend</strong><a class="headerlink" href="#function--extend" title="Permanent link">&para;</a></h2>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span> <span class="nf">extend</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">recursion</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">delims</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
@@ -608,6 +622,22 @@ a[1-3]b 扩展得到 ["a1b","a2b","a3b"]  </p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">format</span><span class="p">(</span><span class="n">format_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
 </code></pre></div>
 格式化字符串  </p>
+<h2 id="function--format_split"><em>function</em>  <strong>format_split</strong><a class="headerlink" href="#function--format_split" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">format_split</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">format_str</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">lsep</span><span class="o">=</span><span class="s2">&quot;{&quot;</span><span class="p">,</span> <span class="n">rsep</span><span class="o">=</span><span class="s2">&quot;}&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
+</code></pre></div>
+格式化切分字符串<br />
+e.g. <br />
+format_split("ABCDE","A{hello}C{world}E")<br />
+[{<br />
+"hello":"B",<br />
+"world":"D<br />
+}]  </p>
+<ul>
+<li><em>format_str</em>:  格式字符串</li>
+<li><em>lsep</em>:  左变量标记符,</li>
+<li><em>rsep</em>:  右变量标记符</li>
+<li><em>text</em>:  文本</li>
+</ul>
 
 
 
@@ -628,7 +658,7 @@ a[1-3]b 扩展得到 ["a1b","a2b","a3b"]  </p>
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../fofa-auto/" class="md-footer__link md-footer__link--prev" aria-label="上一页: fofa" rel="prev">
+        <a href="../files-auto/" class="md-footer__link md-footer__link--prev" aria-label="上一页: files" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -637,20 +667,20 @@ a[1-3]b 扩展得到 ["a1b","a2b","a3b"]  </p>
               <span class="md-footer__direction">
                 上一页
               </span>
-              fofa
+              files
             </div>
           </div>
         </a>
       
       
         
-        <a href="../windows-auto/" class="md-footer__link md-footer__link--next" aria-label="下一页: windows" rel="next">
+        <a href="../utils-auto/" class="md-footer__link md-footer__link--next" aria-label="下一页: utils" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              windows
+              utils
             </div>
           </div>
           <div class="md-footer__button md-icon">
